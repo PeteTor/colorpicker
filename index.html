@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="color-picker-app">
+      <header>
+        <h1>Color Picker Tool</h1>
+      </header>
+
+      <section class="picker-section">
+        <label for="color-input">Select a Color:</label>
+        <input type="color" id="color-input" value="#ff0000" />
+      </section>
+
+      <section class="color-values">
+        <h2>Color Values</h2>
+        <div class="value-item">
+          <span>HEX:</span>
+          <span id="hex-value">#ff0000</span>
+        </div>
+        <div class="value-item">
+          <span>RGB:</span>
+          <span id="rgb-value">rgb(255, 0, 0)</span>
+        </div>
+        <div class="value-item">
+          <span>HSL:</span>
+          <span id="hsl-value">hsl(0, 100%, 50%)</span>
+        </div>
+      </section>
+      <section class="preview-section">
+        <h2>Color Preview</h2>
+        <div id="preview-box"></div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
